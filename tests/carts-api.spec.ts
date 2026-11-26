@@ -7,7 +7,7 @@ test('should create a cart and add a product successfully', async ({ request }) 
   let cartId: string | undefined;
 
   try {
-    // Get an available product
+    // get an available product
     const productsResponse = await request.get(`${API_URL}/products`);
 
     expect(productsResponse.status()).toBe(200);
